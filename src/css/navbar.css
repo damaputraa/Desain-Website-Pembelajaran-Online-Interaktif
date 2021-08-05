@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  font-family: Helvetica, sans-serif;
   background-color: #f4f4f4;
 	scroll-behavior: smooth;
 }
@@ -17,6 +16,7 @@ a {
   position: fixed;
   width: 100%;
   z-index: 3;
+  top: 0;
 }
 
 .header ul {
@@ -26,17 +26,56 @@ a {
   overflow: hidden;
   background-color: #fff;
 }
+/* 
+.header ul li {
+  display: inline-block;
+} */
 
 .header li a {
-  display: block;
+  font-family: 'Hind Siliguri', sans-serif;
   padding: 20px 20px;
+  font-weight: 500;
+  display: block;
   border-right: 1px solid #f4f4f4;
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
-.header li a:hover,
-.header .menu-btn:hover {
-  background-color: #f4f4f4;
+.header ul .head a,
+.header ul .head a:after,
+.header ul .head a:before {
+  transition: all .5s;
+}
+/* SHIFT */
+.shift ul .head a {
+  position:relative;
+  z-index: 1;
+}
+.shift ul .head a:hover {
+  color: #fff;
+}
+.shift ul .head a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #233E8B;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+.shift ul .head a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
 }
 
 .header .logo {
@@ -45,7 +84,14 @@ a {
   font-size: 2em;
   padding: 10px 20px;
   text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 100;
+  letter-spacing: 2px;
 }
+/* .header .logo:hover {
+  color: rgb(94, 94, 94);
+  transition: 0.3s;
+} */
 
 /* menu */
 
@@ -128,7 +174,7 @@ a {
     float: left;
   }
   .header li a {
-    padding: 20px 30px;
+    padding: 25px 30px;
   }
   .header .menu {
     clear: none;
