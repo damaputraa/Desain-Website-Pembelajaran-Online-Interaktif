@@ -15,7 +15,7 @@
 <body>
 	<header class="header shift">
 		<a href="" class="logo animate-bounce text-red-500 h-4 ml-5 font-bold font-serif">DALVIN</a>
-		<input class="menu-btn" type="checkbox" id="menu-btn"/>
+		<input class="menu-btn" type="checkbox" id="menu-btn" />
 		<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 		<ul class="menu" id="nav-one">
 			<li class="head" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"><a href="#">Home</a></li>
@@ -28,12 +28,15 @@
 			<!-- <li><a class=" bg-red-500 hover:bg-red-700 text-white rounded-2xl ml-10 py-2 px-5" href="#contact">Tentang</a></li> -->
 		</ul>
 	</header>
-	<section class="flex justify-center bg-white text-gray-900 font-sans my-10 md:w-full" id="home">
+	<!-- <section class=" justify-center bg-white text-gray-900 font-sans my-10" id="home">
 		<div class="header-font ">
-			<div class="pendahuluan bg-gray-100 my-20 pb-15 rounded-2xl max-w-7xl h-auto my-7 px-10">
+			<div class="pendahuluan grid grid-cols-1 md:grid-cols-2 bg-gray-100 my-20 pb-15 rounded-2xl max-w-7xl h-auto my-7 px-10">
 				<div class="kiri w-full pb-20 ">
-					<iframe class="dunia float-left" src="https://embed.lottiefiles.com/animation/62228" width="600"
+					<div class="w-full float-left">
+					<iframe class="dunia " src="https://embed.lottiefiles.com/animation/62228" width="600"
 						height="400"></iframe>
+					</div>
+					<div class="w-full float-right">
 					<p class="kata-awal text-gray-900  text-3xl py-4 font-bold md:text-center">
 						Apa itu Covid-19 ?
 					</p>
@@ -50,12 +53,43 @@
 						<a class="bg-indigo-400 hover:bg-indigo-600 text-white  rounded-full px-3 py-3"
 							onmouseover="Play2Sound('mySound2')" onmouseout="StopSound('mySound2')" href="">Pelajari Lebih
 							Lanjut!</a>
-					</p>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
 		</div>
+	</section> -->
+	<div class="p-4">
+		<section class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2  bg-white text-gray-900 font-sans rounded-2xl bg-green-100 mt-20 pb-10" id="home">
+
+			<div class="w-full">
+				<iframe class="dunia float-left" src="https://embed.lottiefiles.com/animation/62228" width="600"
+					height="400"></iframe>
+			</div>
+
+			<div class="w-full">
+				<p class="kata-awal text-gray-900  text-3xl py-4 font-bold text-center">
+					Apa itu Covid-19 ?
+				</p>
+				<p class=" text-gray-500 text-lg leading-loose px-3 md:text-left"> <span
+						class="text-red-500 ">Coronavirus</span> adalah
+					kumpulan virus yang bisa menginfeksi sistem pernapasan. Pada banyak kasus, virus ini hanya menyebabkan
+					infeksi pernapasan ringan, seperti flu. Namun, virus ini juga bisa menyebabkan infeksi pernapasan berat,
+					seperti infeksi paru-paru (pneumonia).
+
+					Virus ini menular melalui percikan dahak (droplet) dari saluran pernapasan, misalnya ketika berada di ruang
+					tertutup yang ramai dengan sirkulasi udara yang kurang baik atau kontak langsung dengan droplet.</p>
+
+				<p class="my-3">
+					<a class="bg-indigo-400 hover:bg-indigo-600 text-white  rounded-full px-3 py-3 ml-3"
+						onmouseover="Play2Sound('mySound2')" onmouseout="StopSound('mySound2')" href="">Pelajari Lebih
+						Lanjut!</a>
+				</p>
+			</div>
+	</div>
 	</section>
+	</div>
 
 	<section id="tips" class="flex justify-center bg-white text-gray-900 font-sans py-10 mb-20 ">
 		<div class="text-part">
@@ -98,7 +132,8 @@
 		<div class="text-part">
 			<div class="w-3/4 bg-gray-100 rounded-2xl">
 				<div class=" break-all">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatum sint magnam a sapiente vitae, omnis ducimus praesentium voluptas voluptatibus repellat odit veniam excepturi illum?
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatum sint magnam a sapiente vitae,
+					omnis ducimus praesentium voluptas voluptatibus repellat odit veniam excepturi illum?
 				</div>
 			</div>
 		</div>
