@@ -166,6 +166,12 @@ a {
   top: 0;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 980px) {
+  
+  .dunia, .subscribe {
+    display: none;
+  }
+}
 /* 48em = 768px */
 
 @media (min-width: 48em) {
@@ -180,7 +186,8 @@ a {
     float: right;
     max-height: none;
   }
-  .header .menu-icon {
+  .header .menu-icon  {
     display: none;
   }
+
 }
