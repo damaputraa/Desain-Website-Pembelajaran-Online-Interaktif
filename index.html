@@ -14,14 +14,17 @@
 
 <body>
 	<header class="header shift">
-		<a href="" class="logo animate-pulse text-red-500 h-4 ml-5 font-bold font-serif">DALVIN</a>
-		<input class="menu-btn" type="checkbox" id="menu-btn" />
+		<a href="" class="logo animate-bounce text-red-500 h-4 ml-5 font-bold font-serif">DALVIN</a>
+		<input class="menu-btn" type="checkbox" id="menu-btn"/>
 		<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-		<ul class="menu">
-			<li class="head"><a href="#">Home</a></li>
-			<li class="head"><a href="#tips">Course</a></li>
-			<li class="head"><a href="#tes">Covid-19</a></li>
-			<li class="head"><a href="#about">About Us</a></li>
+		<ul class="menu" id="nav-one">
+			<li class="head" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"><a href="#">Home</a></li>
+			<li class="head" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"><a href="#tips">Course</a>
+			</li>
+			<li class="head" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"><a href="#tes">Subscribe</a>
+			</li>
+			<li class="head" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"><a href="#about">About
+					Us</a></li>
 			<!-- <li><a class=" bg-red-500 hover:bg-red-700 text-white rounded-2xl ml-10 py-2 px-5" href="#contact">Tentang</a></li> -->
 		</ul>
 	</header>
@@ -30,20 +33,22 @@
 			<div class="pendahuluan bg-gray-100 my-20 pb-15 rounded-2xl max-w-7xl h-auto my-7 px-10">
 				<div class="kiri w-full pb-20 ">
 					<iframe class="dunia float-left" src="https://embed.lottiefiles.com/animation/62228" width="600"
-					height="400"></iframe>
+						height="400"></iframe>
 					<p class="kata-awal text-gray-900  text-3xl py-4 font-bold md:text-center">
 						Apa itu Covid-19 ?
 					</p>
-					<p class=" text-gray-500 text-lg leading-loose px-3 md:text-left"> <span class="text-red-500 ">Coronavirus</span> adalah
+					<p class=" text-gray-500 text-lg leading-loose px-3 md:text-left"> <span
+							class="text-red-500 ">Coronavirus</span> adalah
 						kumpulan virus yang bisa menginfeksi sistem pernapasan. Pada banyak kasus, virus ini hanya menyebabkan
 						infeksi pernapasan ringan, seperti flu. Namun, virus ini juga bisa menyebabkan infeksi pernapasan berat,
 						seperti infeksi paru-paru (pneumonia).
-						
+
 						Virus ini menular melalui percikan dahak (droplet) dari saluran pernapasan, misalnya ketika berada di ruang
 						tertutup yang ramai dengan sirkulasi udara yang kurang baik atau kontak langsung dengan droplet.</p>
 
 					<p class="my-3">
-						<a class="bg-indigo-400 hover:bg-indigo-600 text-white  rounded-full px-3 py-3" href="">Pelajari Lebih
+						<a class="bg-indigo-400 hover:bg-indigo-600 text-white  rounded-full px-3 py-3"
+							onmouseover="Play2Sound('mySound2')" onmouseout="StopSound('mySound2')" href="">Pelajari Lebih
 							Lanjut!</a>
 					</p>
 				</div>
@@ -52,9 +57,7 @@
 		</div>
 	</section>
 
-	<div class="border-dashed border-2 border-light-blue-500 w-full my-10"></div>
-
-	<section id="tips" class="flex justify-center bg-white text-gray-900 font-sans py-10 mb-20 " >
+	<section id="tips" class="flex justify-center bg-white text-gray-900 font-sans py-10 mb-20 ">
 		<div class="text-part">
 			<div class="header-font ">
 				<h1 class="text-4xl font-sans font-bold text-center mt-10 mb-5">
@@ -62,75 +65,97 @@
 				</h1>
 				<div class="md:flex flex-wrap sm:flex-wrap-reverse grid-flow-col grid-cols-4 grid-rows-1 w-200">
 					<div class="grid md:grid-flow-col md:text-center">
-					<div class="masker">
-						<iframe class="md:items-center" src="https://embed.lottiefiles.com/animation/64753" width="200" height="250"></iframe>
-						<p class="text-gray-900  text-lg py-1 font-bold">Menggunakan Masker</p>
-						<p class="text-gray-600">Gunakanlah Masker Standart Kesehatan untuk mencegah virus masuk ke pernapasan.</p>
+						<div class="masker">
+							<iframe class="md:items-center" src="https://embed.lottiefiles.com/animation/64753" width="200"
+								height="250"></iframe>
+							<p class="text-gray-900  text-lg py-1 font-bold">Menggunakan Masker</p>
+							<p class="text-gray-600">Gunakanlah Masker Standart Kesehatan untuk mencegah virus masuk ke pernapasan.
+							</p>
+						</div>
+						<div class="cuci-tangan ">
+							<iframe src="https://embed.lottiefiles.com/animation/64890" width="200" height="250"></iframe>
+							<p class="text-gray-900  text-lg py-1 font-bold">Mencuci Tangan</p>
+							<p class="text-gray-600">Rutin mencuci tangan dengan air dan sabun atau hand sanitizer yang mengandung
+								alkohol minimal 60%.</p>
+						</div>
+						<div class="jaga ">
+							<iframe src="https://embed.lottiefiles.com/animation/30921" width="200" height="250"></iframe>
+							<p class="text-gray-900  text-lg py-1 font-bold">Menjaga Jarak</p>
+							<p class="text-gray-600">Terapkan physical distancing, yaitu menjaga jarak minimal 1 meter dari orang
+								lain, dan jangan dulu ke luar rumah kecuali ada keperluan mendesak.</p>
+						</div>
+						<div class="stay ">
+							<iframe src="https://embed.lottiefiles.com/animation/64592" width="200" height="250"></iframe>
+							<p class="text-gray-900  text-lg py-1 font-bold">Tetap Di Rumah</p>
+							<p class="text-gray-600">Jika tidak ada keperluan mendesak harap tetap dirumah saja.</p>
+						</div>
 					</div>
-					<div class="cuci-tangan ">
-						<iframe src="https://embed.lottiefiles.com/animation/64890" width="200" height="250"></iframe>
-						<p class="text-gray-900  text-lg py-1 font-bold">Mencuci Tangan</p>
-						<p class="text-gray-600">Rutin mencuci tangan dengan air dan sabun atau hand sanitizer yang mengandung alkohol minimal 60%.</p>
-					</div>
-					<div class="jaga ">
-						<iframe src="https://embed.lottiefiles.com/animation/30921" width="200" height="250"></iframe>
-						<p class="text-gray-900  text-lg py-1 font-bold">Menjaga Jarak</p>
-						<p class="text-gray-600">Terapkan physical distancing, yaitu menjaga jarak minimal 1 meter dari orang lain, dan jangan dulu ke luar rumah kecuali ada keperluan mendesak.</p>
-					</div>
-					<div class="stay ">
-						<iframe src="https://embed.lottiefiles.com/animation/64592" width="200" height="250"></iframe>
-						<p class="text-gray-900  text-lg py-1 font-bold">Tetap Di Rumah</p>
-						<p class="text-gray-600">Jika tidak ada keperluan mendesak harap tetap dirumah saja.</p>
-					</div>
-				</div>
 				</div>
 			</div>
 	</section>
 
-	<section id="tes" class="flex justify-center bg-yellow-200 text-gray-900 font-sans py-10 pb-20" >
+	<section id="subscribe" class="flex justify-center bg-white text-gray-900 font-sans py-10 mb-20 ">
+		<div class="text-part">
+			<div class="w-3/4 bg-gray-100 rounded-2xl">
+				<div class=" break-all">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatum sint magnam a sapiente vitae, omnis ducimus praesentium voluptas voluptatibus repellat odit veniam excepturi illum?
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="tes" class="flex justify-center bg-yellow-200 text-gray-900 font-sans py-10 pb-20">
 		<div class="text-part">
 			<div class="header-font ">
-				<h1  class="text-4xl font-sans font-bold text-center py-3">
+				<h1 class="text-4xl font-sans font-bold text-center py-3">
 					Tips Pencegahan
 				</h1>
 				<div class="flex flex-wrap sm:flex-wrap-reverse grid-flow-col grid-cols-4 grid-rows-1 w-200">
 					<div class="grid md:grid-flow-col ">
-					<div class="masker">
-						<iframe src="https://embed.lottiefiles.com/animation/64753" width="200" height="250"></iframe>
-						<p class="text-gray-900  text-lg py-1 font-bold">Menggunakan Masker</p>
-						<p class="text-gray-600">Gunakanlah Masker Standart Kesehatan untuk mencegah virus masuk ke pernapasan.</p>
+						<div class="masker">
+							<iframe src="https://embed.lottiefiles.com/animation/64753" width="200" height="250"></iframe>
+							<p class="text-gray-900  text-lg py-1 font-bold">Menggunakan Masker</p>
+							<p class="text-gray-600">Gunakanlah Masker Standart Kesehatan untuk mencegah virus masuk ke pernapasan.
+							</p>
+						</div>
+						<div class="cuci-tangan ">
+							<iframe src="https://embed.lottiefiles.com/animation/64890" width="200" height="250"></iframe>
+							<p class="text-gray-900  text-lg py-1 font-bold">Mencuci Tangan</p>
+							<p class="text-gray-600">Rutin mencuci tangan dengan air dan sabun atau hand sanitizer yang mengandung
+								alkohol minimal 60%.</p>
+						</div>
+						<div class="jaga ">
+							<iframe src="https://embed.lottiefiles.com/animation/30921" width="200" height="250"></iframe>
+							<p class="text-gray-900  text-lg py-1 font-bold">Menjaga Jarak</p>
+							<p class="text-gray-600">Terapkan physical distancing, yaitu menjaga jarak minimal 1 meter dari orang
+								lain, dan jangan dulu ke luar rumah kecuali ada keperluan mendesak.</p>
+						</div>
+						<div class="stay ">
+							<iframe src="https://embed.lottiefiles.com/animation/64592" width="200" height="250"></iframe>
+							<p class="text-gray-900  text-lg py-1 font-bold">Tetap Di Rumah</p>
+							<p class="text-gray-600">Jika tidak ada keperluan mendesak harap tetap dirumah saja.</p>
+						</div>
 					</div>
-					<div class="cuci-tangan ">
-						<iframe src="https://embed.lottiefiles.com/animation/64890" width="200" height="250"></iframe>
-						<p class="text-gray-900  text-lg py-1 font-bold">Mencuci Tangan</p>
-						<p class="text-gray-600">Rutin mencuci tangan dengan air dan sabun atau hand sanitizer yang mengandung alkohol minimal 60%.</p>
-					</div>
-					<div class="jaga ">
-						<iframe src="https://embed.lottiefiles.com/animation/30921" width="200" height="250"></iframe>
-						<p class="text-gray-900  text-lg py-1 font-bold">Menjaga Jarak</p>
-						<p class="text-gray-600">Terapkan physical distancing, yaitu menjaga jarak minimal 1 meter dari orang lain, dan jangan dulu ke luar rumah kecuali ada keperluan mendesak.</p>
-					</div>
-					<div class="stay ">
-						<iframe src="https://embed.lottiefiles.com/animation/64592" width="200" height="250"></iframe>
-						<p class="text-gray-900  text-lg py-1 font-bold">Tetap Di Rumah</p>
-						<p class="text-gray-600">Jika tidak ada keperluan mendesak harap tetap dirumah saja.</p>
-					</div>
-				</div>
 				</div>
 			</div>
 	</section>
-
-	<!-- 
-		udah bisa ?
-		mantap,soalnya kamu yang share maybe
-		kluarnya gimana ya?
-		ctrl shift p terus ketik live share: end collab
-		
-		coba kau yang share	 
-	aku gabisa liat code km
-		aku kira tu kita bisa saling liat code
--->
+	<div class="audio">
+		<audio id="mySound" preload="auto">
+			<source src="src/suara/klik3.wav" controls>
+			</source>
+		</audio>
+		<audio id="mySound2" preload="auto">
+			<source src="src/suara/klik2.wav" controls>
+			</source>
+		</audio>
+		<audio id="burgerSound" preload="auto">
+			<source src="src/suara/burger.wav" controls>
+			</source>
+		</audio>
+	</div>
 
 </body>
+<script src="src/js/app.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 
 </html>
