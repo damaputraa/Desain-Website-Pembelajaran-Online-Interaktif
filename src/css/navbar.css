@@ -168,9 +168,9 @@ a {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 980px) {
   
-  .dunia, .subscribe {
+  /* .dunia, .subscribe {
     display: none;
-  }
+  } */
 }
 /* 48em = 768px */
 
