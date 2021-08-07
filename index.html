@@ -8,6 +8,8 @@
 	<title>Dalvin Learning Course</title>
 	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 	<link rel="icon" href="src/logo/dalvin.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+		integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
 	<link rel="stylesheet" href="src/css/navbar.css">
 	<link rel="stylesheet" href="src/css/style.css">
 </head>
@@ -24,8 +26,8 @@
 			<li class="head" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"><a
 					href="#subscribe">Subscribe</a>
 			</li>
-			<li class="head" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"><a href="#about">About
-					Us</a></li>
+			<li class="head" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"><a href="#about">About</a>
+			</li>
 		</ul>
 	</header>
 	<!-- <section class=" justify-center bg-white text-gray-900 font-sans my-10" id="home">
@@ -68,22 +70,17 @@
 			id="home">
 
 			<div class="px-4 py-5 w-full h-full">
-				<iframe class="dunia float-left" src="https://embed.lottiefiles.com/animation/62228" width="450"
-					height="400"></iframe>
+				<iframe src="https://embed.lottiefiles.com/animation/56232" class="dunia" width="500" height="400"></iframe>
 			</div>
 
 			<div class="px-4 py-5">
 				<p class="kata-awal text-gray-900  text-3xl py-4 font-bold text-center ">
-					Apa itu Covid-19 ?
+					Apa itu Dalvin ?
 				</p>
-				<p class=" text-gray-500 text-lg leading-loose px-5 text-justify"> <span
-						class="text-red-500 ">Coronavirus</span> adalah
-					kumpulan virus yang bisa menginfeksi sistem pernapasan. Pada banyak kasus, virus ini hanya menyebabkan
-					infeksi pernapasan ringan, seperti flu. Namun, virus ini juga bisa menyebabkan infeksi pernapasan berat,
-					seperti infeksi paru-paru (pneumonia).
-
-					Virus ini menular melalui percikan dahak (droplet) dari saluran pernapasan, misalnya ketika berada di ruang
-					tertutup yang ramai dengan sirkulasi udara yang kurang baik atau kontak langsung dengan droplet.</p>
+				<p class=" text-gray-500 text-lg leading-loose px-5 text-justify"> <span class="text-red-500 ">Dalvin</span>
+					adalah sebuah platform E-learning dengan teknologi modern yang dapat membantu menghasilkan talenta digital
+					berstandar global dan dapat membantu para guru dan siswa dalam berinteraksi melalui daring. Kedepanya
+					diharapkan dapat membantu Indonesia menjadi yang terdepan.</p>
 
 				<p class="my-3">
 					<a class="bg-indigo-400 hover:bg-indigo-600 text-white  rounded-full px-3 py-3 ml-3"
@@ -92,52 +89,493 @@
 				</p>
 			</div>
 
-	</div>
-	</section>
+		</section>
 	</div>
 
 	<!-- Class Main Course -->
-	<section id="course" class="flex justify-center bg-white text-gray-900 font-sans py-10 mb-20 ">
+	<section id="course" class="flex justify-center bg-white text-gray-900 font-sans py-20 ">
 		<div class="text-part">
-			<div class="w-3/4 bg-gray-100 rounded-2xl">
-				<div class=" break-all">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatum sint magnam a sapiente vitae,
-					omnis ducimus praesentium voluptas voluptatibus repellat odit veniam excepturi illum?
+			<!-- Class Flex -->
+			<p class="kata-awal tracking-wider text-gray-900 uppercase text-3xl font-bold text-center my-8">
+				Course Dalvin
+			</p>
+			<div class="flex items-center justify-center flex-wrap ">
+				<div class="px-8 py-5">
+					<iframe src="https://embed.lottiefiles.com/animation/29328" width="150"></iframe>
+					<button type="button" onclick="openModal('android')"
+						class="px-4 py-2 mt-2 bg-green-400 hover:bg-green-500 text-white round transition duration-300ed justify-center  items-center"
+						onmouseover="PlaySoundBurger('burgerSound')" onmouseout="StopSound('burgerSound')">Android Developer
+					</button>
+				</div>
+				<div class="px-8 py-5">
+					<iframe src="https://embed.lottiefiles.com/animation/70537" width="150"></iframe>
+					<button type="button" onclick="openModal('ios')"
+						class="px-4 py-2 mt-2 bg-purple-400 hover:bg-purple-500 text-white rou transition duration-300nded"
+						onmouseover="PlaySoundBurger('burgerSound')" onmouseout="StopSound('burgerSound')">IOS Developer</button>
+				</div>
+				<div class="px-8 py-5">
+					<iframe src="https://embed.lottiefiles.com/animation/50084" width="180"></iframe>
+					<button type="button" onclick="openModal('backend')"
+						class="px-4 py-2 mt-2 bg-gray-400 hover:bg-gray-500 text-white rounded transition duration-300"
+						onmouseover="PlaySoundBurger('burgerSound')" onmouseout="StopSound('burgerSound')">Back-End
+						Developer</button>
+				</div>
+				<div class="px-8 py-5">
+					<iframe src="https://embed.lottiefiles.com/animation/8987" width="150"></iframe>
+					<button type="button" onclick="openModal('frontend')"
+						class="px-4 py-2 mt-2 bg-red-400 hover:bg-red-500 text-white rounded" transition duration-300
+						onmouseover="PlaySoundBurger('burgerSound')" onmouseout="StopSound('burgerSound')">Front-End
+						Developer</button>
+				</div>
+				<div class="px-8 py-5">
+					<iframe src="https://embed.lottiefiles.com/animation/46533" width="150"></iframe>
+					<button type="button" onclick="openModal('mcl')"
+						class="px-4 py-2 mt-2 bg-yellow-400 hover:bg-yellow-500 text-white rou transition duration-300nded"
+						onmouseover="PlaySoundBurger('burgerSound')" onmouseout="StopSound('burgerSound')">Machine Learning</button>
+				</div>
+				<div class="px-8 py-5">
+					<iframe src="https://embed.lottiefiles.com/animation/57081" width="170"></iframe>
+					<button type="button" onclick="openModal('desain')"
+						class="px-4 py-2 mt-2 bg-indigo-400 hover:bg-indigo-500 text-white rou transition duration-300nded"
+						onmouseover="PlaySoundBurger('burgerSound')" onmouseout="StopSound('burgerSound')">Design Class</button>
+				</div>
+				<div class="px-8 py-5">
+					<iframe src="https://embed.lottiefiles.com/animation/3046" width="150"></iframe>
+					<button type="button" onclick="openModal('office')"
+						class="px-4 py-2 mt-2 bg-blue-400 hover:bg-blue-500 text-white rounded transition duration-300"
+						onmouseover="PlaySoundBurger('burgerSound')" onmouseout="StopSound('burgerSound')">Office
+						Application</button>
 				</div>
 			</div>
+
+			<!-- Class Course Andoid -->
+			<dialog id="android" class="bg-transparent z-0 relative w-screen h-screen">
+				<div
+					class="p-7 flex justify-center items-center fixed left-0 top-0 w-full h-full bg-gray-900 bg-opacity-50 z-50 transition-opacity duration-300 opacity-0">
+					<div class="bg-white flex rounded-lg w-1/2 relative">
+						<div class="flex flex-col items-start">
+							<div class="p-7 flex items-center w-full">
+								<div class="text-gray-900 font-bold text-lg">Android Developer</div>
+								<svg onclick="modalClose('android')" class="ml-auto fill-current text-gray-700 w-5 h-5 cursor-pointer"
+									xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+									<path
+										d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z" />
+								</svg>
+							</div>
+
+							<div class="px-7 overflow-x-hidden overflow-y-auto" style="max-height: 40vh;">
+								<p>Android Developer adalah orang yang bertanggung jawab untuk mengembangkan dan membangun perangkat
+									lunak berbasis mobile menggunakan sistem operasi Android. Jadi Di kelas ini kamu belajar tentang apa
+									serba serbi Android</p>
+							</div>
+
+							<div class="p-7 flex justify-end items-center w-full">
+								<button type="button" onclick="modalClose('android')"
+									class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-3">
+									Okey
+								</button>
+								<button type="button" onclick="modalClose('android')"
+									class="bg-transparent hover:bg-gray-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+									Keluar
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</dialog>
+
+			<!-- Class Course IOS -->
+			<dialog id="ios" class="bg-transparent z-0 relative w-screen h-screen">
+				<div
+					class="p-7 flex justify-center items-center fixed left-0 top-0 w-full h-full bg-gray-900 bg-opacity-50 z-50 transition-opacity duration-300 opacity-0">
+					<div class="bg-white flex rounded-lg w-1/2 relative">
+						<div class="flex flex-col items-start">
+							<div class="p-7 flex items-center w-full">
+								<div class="text-gray-900 font-bold text-lg">IOS Developer</div>
+								<svg onclick="modalClose('ios')" class="ml-auto fill-current text-gray-700 w-5 h-5 cursor-pointer"
+									xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+									<path
+										d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z" />
+								</svg>
+							</div>
+
+							<div class="px-7 overflow-x-hidden overflow-y-auto" style="max-height: 40vh;">
+								<p>IOS Developer adalah salah satu pekerjaan terkait dengan pengembangan aplikasi mobile (seluler)
+									dengan menggunakan sistem operasi iOS Apple. Jadi tugas yang dimiliki adalah membuat aplikasi yang
+									dapat dijalankan pada sistem operasi tersebut. </p>
+							</div>
+
+							<div class="p-7 flex justify-end items-center w-full">
+								<button type="button" onclick="modalClose('ios')"
+									class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-3">
+									Okey
+								</button>
+								<button type="button" onclick="modalClose('ios')"
+									class="bg-transparent hover:bg-gray-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+									Keluar
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</dialog>
+
+			<!-- Class Course Backend -->
+			<dialog id="backend" class="bg-transparent z-0 relative w-screen h-screen">
+				<div
+					class="p-7 flex justify-center items-center fixed left-0 top-0 w-full h-full bg-gray-900 bg-opacity-50 z-50 transition-opacity duration-300 opacity-0">
+					<div class="bg-white flex rounded-lg w-1/2 relative">
+						<div class="flex flex-col items-start">
+							<div class="p-7 flex items-center w-full">
+								<div class="text-gray-900 font-bold text-lg">Back-End Developer</div>
+								<svg onclick="modalClose('backend')" class="ml-auto fill-current text-gray-700 w-5 h-5 cursor-pointer"
+									xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+									<path
+										d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z" />
+								</svg>
+							</div>
+
+							<div class="px-7 overflow-x-hidden overflow-y-auto" style="max-height: 40vh;">
+								<p>Back-End Developer adalah seseorang yang bertanggung jawab untuk mengelola server website
+									(server-side). Artinya, seorang backend developer perlu memastikan website bekerja dengan baik dalam
+									kaitan pertukaran data dari browser ke server. Selain itu, backend developer juga menangani database
+									dan membuat alur website yang terstruktur.</p>
+							</div>
+
+							<div class="p-7 flex justify-end items-center w-full">
+								<button type="button" onclick="modalClose('backend')"
+									class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-3">
+									Okey
+								</button>
+								<button type="button" onclick="modalClose('backend')"
+									class="bg-transparent hover:bg-gray-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+									Keluar
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</dialog>
+
+			<!-- Class Course Frontend -->
+			<dialog id="frontend" class="bg-transparent z-0 relative w-screen h-screen">
+				<div
+					class="p-7 flex justify-center items-center fixed left-0 top-0 w-full h-full bg-gray-900 bg-opacity-50 z-50 transition-opacity duration-300 opacity-0">
+					<div class="bg-white flex rounded-lg w-1/2 relative">
+						<div class="flex flex-col items-start">
+							<div class="p-7 flex items-center w-full">
+								<div class="text-gray-900 font-bold text-lg">Front-End Developer</div>
+								<svg onclick="modalClose('frontend')" class="ml-auto fill-current text-gray-700 w-5 h-5 cursor-pointer"
+									xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+									<path
+										d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z" />
+								</svg>
+							</div>
+
+							<div class="px-7 overflow-x-hidden overflow-y-auto" style="max-height: 40vh;">
+								<p>FrontEnd adalah bagian dari pengembangan web yang mengkodekan dan membuat FrontEnd depan situs web,
+									yang merupakan fitur yang dapat dilihat dan diakses secara langsung oleh pengguna akhir atau klien.
+								</p>
+							</div>
+
+							<div class="p-7 flex justify-end items-center w-full">
+								<button type="button" onclick="modalClose('frontend')"
+									class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-3">
+									Okey
+								</button>
+								<button type="button" onclick="modalClose('frontend')"
+									class="bg-transparent hover:bg-gray-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+									Keluar
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</dialog>
+
+			<!-- Class Course machine learning -->
+			<dialog id="mcl" class="bg-transparent z-0 relative w-screen h-screen">
+				<div
+					class="p-7 flex justify-center items-center fixed left-0 top-0 w-full h-full bg-gray-900 bg-opacity-50 z-50 transition-opacity duration-300 opacity-0">
+					<div class="bg-white flex rounded-lg w-1/2 relative">
+						<div class="flex flex-col items-start">
+							<div class="p-7 flex items-center w-full">
+								<div class="text-gray-900 font-bold text-lg">Machine Learning</div>
+								<svg onclick="modalClose('mcl')" class="ml-auto fill-current text-gray-700 w-5 h-5 cursor-pointer"
+									xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+									<path
+										d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z" />
+								</svg>
+							</div>
+
+							<div class="px-7 overflow-x-hidden overflow-y-auto" style="max-height: 40vh;">
+								<p>Machine Learning Developer adalah pakar dalam menggunakan data untuk model pelatihan. Model-model
+									tersebut kemudian digunakan untuk mengotomatisasi proses seperti klasifikasi gambar, pengenalan suara,
+									dan perkiraan pasar. Sering kali ada penggabungan dengan peran data scientist atau artificial
+									intelligence (AI) engineer.</p>
+							</div>
+
+							<div class="p-7 flex justify-end items-center w-full">
+								<button type="button" onclick="modalClose('mcl')"
+									class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-3">
+									Okey
+								</button>
+								<button type="button" onclick="modalClose('mcl')"
+									class="bg-transparent hover:bg-gray-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+									Keluar
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</dialog>
+
+			<!-- Class Course Andoid -->
+			<dialog id="desain" class="bg-transparent z-0 relative w-screen h-screen">
+				<div
+					class="p-7 flex justify-center items-center fixed left-0 top-0 w-full h-full bg-gray-900 bg-opacity-50 z-50 transition-opacity duration-300 opacity-0">
+					<div class="bg-white flex rounded-lg w-1/2 relative">
+						<div class="flex flex-col items-start">
+							<div class="p-7 flex items-center w-full">
+								<div class="text-gray-900 font-bold text-lg">Design Class</div>
+								<svg onclick="modalClose('desain')" class="ml-auto fill-current text-gray-700 w-5 h-5 cursor-pointer"
+									xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+									<path
+										d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z" />
+								</svg>
+							</div>
+
+							<div class="px-7 overflow-x-hidden overflow-y-auto" style="max-height: 40vh;">
+								<p>Desain Class adalah membuat object dengan bantuan Software seperti Adobe Ilustrator, Photoshop dan
+									Corel Draw</p>
+							</div>
+
+							<div class="p-7 flex justify-end items-center w-full">
+								<button type="button" onclick="modalClose('desain')"
+									class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-3">
+									Okey
+								</button>
+								<button type="button" onclick="modalClose('desain')"
+									class="bg-transparent hover:bg-gray-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+									Keluar
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</dialog>
+
+			<!-- Class Course Office Application -->
+			<dialog id="office" class="bg-transparent z-0 relative w-screen h-screen">
+				<div
+					class="p-7 flex justify-center items-center fixed left-0 top-0 w-full h-full bg-gray-900 bg-opacity-50 z-50 transition-opacity duration-300 opacity-0">
+					<div class="bg-white flex rounded-lg w-1/2 relative">
+						<div class="flex flex-col items-start">
+							<div class="p-7 flex items-center w-full">
+								<div class="text-gray-900 font-bold text-lg">Office Application</div>
+								<svg onclick="modalClose('office')" class="ml-auto fill-current text-gray-700 w-5 h-5 cursor-pointer"
+									xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+									<path
+										d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z" />
+								</svg>
+							</div>
+
+							<div class="px-7 overflow-x-hidden overflow-y-auto" style="max-height: 40vh;">
+								<p>Office Application adalah Class belajar tentang Microsoft Office seperto Word, Excel dan Power Point
+								</p>
+							</div>
+
+							<div class="p-7 flex justify-end items-center w-full">
+								<button type="button" onclick="modalClose('office')"
+									class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-3">
+									Okey
+								</button>
+								<button type="button" onclick="modalClose('office')"
+									class="bg-transparent hover:bg-gray-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+									Keluar
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</dialog>
+
+
 		</div>
 	</section>
-	
-	<!-- Class Main Subscribe -->
-	<section id="subscribe" class="bg-white text-gray-900 font-sans py-10 mb-20 ">
 
-		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 justify-center w-full px-10">
-			<div class="px-4 py-5 leading-relaxed text-gray-800">
-				<div class="text-3xl font-bold mt-5">Daftar Biaya Belajar</div>
-				<div class="text-md text-gray-500 leading-6 mt-3">
-					Pilih paket langganan <span class="text-blue-500 ">sesuai budget anda</span> dan sebagai <span class="text-blue-500 ">investasi</span> belajar yang sesuai dengan kebutuhan Anda.
+	<!-- Class Main Subscribe -->
+	<section id="subscribe" class="bg-white text-gray-900 font-sans pt-10 ">
+		<div class="px-10 mb-10">
+			<div class="rounded-2xl bg-blue-100 mt-20 pb-10">
+				<div class="grid align-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-2 py-10">
+					<div class=" py-5 leading-relaxed text-gray-800 ml-10">
+						<div class="flex justify-items-center text-4xl font-bold  mt-5">Daftar Biaya Belajar</div>
+						<div class="text-lg text-gray-500 leading-6 mt-3">
+							Pilih paket langganan <span class="text-blue-500 ">sesuai budget anda</span> dan sebagai <span
+								class="text-blue-500 ">investasi</span> belajar yang sesuai dengan kebutuhan Anda.
+						</div>
+					</div>
+					<div class="flex justify-center items-center py-3 leading-relaxed text-xl text-gray-800  h-full">
+						<iframe class="biaya rounded-full" src="https://embed.lottiefiles.com/animation/24827" width="400" height="400"></iframe>
+					</div>
 				</div>
-			</div>
-			<div class="px-4 py-3 leading-relaxed text-xl text-gray-800 w-full h-full">
-				<iframe class="subscribe " src="https://embed.lottiefiles.com/animation/53882" width="450" height="400"></iframe>
 			</div>
 		</div>
 
-		<div class="flex justify-center min-h-screen ">
+		<!-- Class Main Bebayar -->
+		<div class="flex justify-center">
 			<div class="w-5/6">
 				<div class="bg-white shadow rounded-xl overflow-hidden">
 					<div class="px-8 py-3 bg-gradient-to-r from-red-400 to-red-300"></div>
 
 					<div class="px-8 py-5 leading-relaxed text-xl text-gray-800">
-						<div class="text-xl">Paket Langganan Belajar</div>
+						<div class="text-3xl mb-5 font-bold">Paket Langganan Belajar</div>
+
+						<!-- Dropdown -->
+						<div class="relative inline-flex">
+							<svg class="w-2 h-2 absolute top-0 right-0 m-4 pointer-events-none" xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 412 232">
+								<path
+									d="M206 171.144L42.678 7.822c-9.763-9.763-25.592-9.763-35.355 0-9.763 9.764-9.763 25.592 0 35.355l181 181c4.88 4.882 11.279 7.323 17.677 7.323s12.796-2.441 17.678-7.322l181-181c9.763-9.764 9.763-25.592 0-35.355-9.763-9.763-25.592-9.763-35.355 0L206 171.144z"
+									fill="#648299" fill-rule="nonzero" /></svg>
+
+							<select
+								class="border border-gray-300 text-sm rounded-full text-gray-700 h-10 pl-5 pr-10 bg-white hover:border-gray-400 focus:outline-none appearance-none ">
+								<option>Langganan 90 Hari - <span class="font-bold">Rp. 1.500.000</span> </option>
+								<option>Langganan 30 Hari - <span class="font-bold">Rp. 1.000.000</span> </option>
+								<option>Langganan 7 Hari - <span class="font-bold">Rp. 300.000</span> </option>
+								<option>Langganan 365 Hari - <span class="font-bold">Rp. 5.500.000</span> </option>
+							</select>
+
+						</div>
+
+						<ul class="list-inside md:list-inside leading-relaxed text-gray-700 mt-5">
+							<li>
+								<i class="fa fa-check-circle mr-3"></i>
+								<span>
+									Akses penuh ke seluruh kelas di Dalvin.
+								</span>
+							</li>
+							<li>
+								<i class="fa fa-check-circle mr-3"></i>
+								<span>
+									Bimbingan dan bedah kode (code review) dari para expert developer terhadap tugas submission Anda.
+								</span>
+							</li>
+							<li>
+								<i class="fa fa-check-circle mr-3"></i>
+								<span>
+									Sertifikat kelulusan jika Anda berhasil menyelesaikan kelas berikut submission proyek akhir dengan
+									baik.
+								</span>
+							</li>
+							<li>
+								<i class="fa fa-check-circle mr-3"></i>
+								<span>
+									Konsultasi sepuasnya di forum diskusi.
+								</span>
+							</li>
+							<li>
+								<i class="fa fa-check-circle mr-3"></i>
+								<span>
+									Bayar putus. Tak ada kewajiban untuk melanjutkan langganan. Tak ada tagihan rahasia.
+								</span>
+							</li>
+							<li class="flex justify-center items-center my-10">
+								<button
+									class="bg-red-400 hover:bg-red-500 text-white transition duration-300 px-8 py-3 rounded-xl">Daftar
+									Sekarang</button>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<!-- Class Main Trial -->
+		<div class="flex justify-center py-10">
+			<div class="w-5/6">
+				<div class="bg-white shadow rounded-xl overflow-hidden">
+					<div class="px-8 py-3 bg-gradient-to-r from-indigo-400 to-indigo-300"></div>
+
+					<div class="px-8 py-5 leading-relaxed text-xl text-gray-800">
+						<div class="text-3xl font-bold mb-3">Belum Siap Berlangganan?</div>
+						<p class="text-gray-500">Coba Gratis 15 Hari</p>
+
+						<ul class="list-inside md:list-inside leading-relaxed text-gray-700 mt-5">
+							<li>
+								<i class="fa fa-check-circle mr-3"></i>
+								<span>
+									Akses penuh ke seluruh kelas di Dalvin.
+								</span>
+							</li>
+							<li>
+								<i class="fa fa-check-circle mr-3"></i>
+								<span>
+									1x (satu kali) kirim submission. Dapatkan bimbingan dan bedah kode (code review) dari para expert
+									developer.
+								</span>
+							</li>
+							<li>
+								<i class="fa fa-check-circle mr-3"></i>
+								<span>
+									Sertifikat kelulusan jika Anda berhasil menyelesaikan kelas berikut submission proyek akhir dengan
+									baik.
+								</span>
+							</li>
+							<li>
+								<i class="fa fa-check-circle mr-3"></i>
+								<span>
+									Konsultasi sepuasnya di forum diskusi.
+								</span>
+							</li>
+							<li>
+								<i class="fa fa-check-circle mr-3"></i>
+								<span>
+									Trial hanya berlaku 1x (satu kali) per orang/akun. Gunakan kesempatan ini sebaik-baiknya.
+								</span>
+							</li>
+							<li class="flex justify-center items-center my-10">
+								<button
+									class="border-2 border-indigo-400 text-indigo-600 hover:bg-indigo-500 hover:text-white transition duration-300 px-8 py-3 rounded-xl">Daftar
+									Sekarang</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Class Main Gratis -->
+		<div class="flex justify-center ">
+			<div class="w-5/6">
+				<div class="bg-white shadow rounded-xl overflow-hidden">
+					<div class="px-8 py-3 bg-gradient-to-r from-green-400 to-green-300"></div>
+
+					<div class="px-8 leading-relaxed text-xl text-gray-800">
+						<div class="text-3xl font-bold my-3">Coba Kelas Gratis</div>
+						<p class="text-gray-500">Coba Kelas Gratis Dalvin dengan Memasukan Kode di bawah ini.</p>
+						<div class="flex justify-center items-center leading-relaxed
+							leading-relaxed my-10">
+							<input
+								class="input border-2 border-blue-400 appearance-none rounded px-10 py-2 focus focus:border-indigo-600 focus:outline-none active:outline-none active:border-indigo-600 mx-5"
+								id="email" type="text" autofocus>
+
+							<button
+								class="border-2 border-green-400 text-green-600 hover:bg-green-500 hover:text-white transition duration-300 px-8 py-3 rounded-xl mx-2">Coba
+								Sekarang</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
 	</section>
 
 	<!-- Class Main About -->
-	<section id="about" class="flex justify-center bg-yellow-200 text-gray-900 font-sans py-10 pb-20">
+	<section id="about" class="flex justify-center bg-yellow-200 text-gray-900 font-sans pb-20">
 		<div class="text-part">
 			<div class="header-font ">
 				<h1 class="text-4xl font-sans font-bold text-center py-3">
@@ -189,8 +627,15 @@
 		</audio>
 	</div>
 
+	<!-- Footer -->
+	<div class="footer flex justify-center items-center bg-blue-600 text-white w-full font-sans bottom-0 left-0">
+		<p class="font-bold tracking-wider py-3">Copyright By <span><a
+					class="text-red-400 hover:text-red-500 hover:underline" href="https://linktr.ee/dama"
+					target="_blank">Dalvin</a> </span> @ 2021</p>
+	</div>
 </body>
 <script src="src/js/app.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
 </html>

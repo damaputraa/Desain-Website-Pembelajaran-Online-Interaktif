@@ -29,6 +29,12 @@ a{
   display: none;
 }
 
+.dropdown:focus-within .dropdown-menu {
+	opacity: 1;
+	transform: translate(0) scale(1);
+	visibility: visible;
+}
+
 .home, .about-area, .port-area, .service-area, .contact-area{
 	position: relative;
 	display: flex;

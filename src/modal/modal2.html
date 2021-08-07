@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- Class Flex -->
+	<div class="px-20 py-20 mx-20">
+		<div class="flex items-center justify-center flex-wrap mx-50 py-50">
+			<div class="px-8 py-5">
+				<iframe src="https://embed.lottiefiles.com/animation/29328" width="150"></iframe>
+				<button type="button" onclick="openModal('mymodalcentered')"
+					class="px-4 py-2 mt-2 bg-green-400 hover:bg-green-500 text-white rounded justify-center  items-center">Android Developer </button>
+			</div>
+			<div class="px-8 py-5">
+				<iframe src="https://embed.lottiefiles.com/animation/70537" width="150"></iframe>
+				<button type="button" onclick="openModal('mymodalcentered')" class="px-4 py-2 mt-2 bg-purple-400 hover:bg-purple-500 text-white rounded">IOS Developer</button>
+			</div>
+			<div class="px-8 py-5">
+				<iframe src="https://embed.lottiefiles.com/animation/50084" width="180"></iframe>
+				<button type="button" onclick="openModal('mymodalcentered')" class="px-4 py-2 mt-2 bg-gray-400 hover:bg-gray-500 text-white rounded">Back-End Developer</button>
+			</div>
+			<div class="px-8 py-5">
+				<iframe src="https://embed.lottiefiles.com/animation/8987" width="150"></iframe>
+				<button type="button" onclick="openModal('mymodalcentered')" class="px-4 py-2 mt-2 bg-red-400 hover:bg-red-500 text-white rounded">Front-End Developer</button>
+			</div>
+			<div class="px-8 py-5">
+				<iframe src="https://embed.lottiefiles.com/animation/46533" width="150"></iframe>
+				<button type="button" onclick="openModal('mymodalcentered')" class="px-4 py-2 mt-2 bg-yellow-400 hover:bg-yellow-500 text-white rounded">Machine Learning</button>
+			</div>
+			<div class="px-8 py-5">
+				<iframe src="https://embed.lottiefiles.com/animation/57081" width="160"></iframe>
+				<button type="button" onclick="openModal('mymodalcentered')" class="px-4 py-2 mt-2 bg-indigo-400 hover:bg-indigo-500 text-white rounded">Design Class</button>
+			</div>
+			<div class="px-8 py-5">
+				<iframe src="https://embed.lottiefiles.com/animation/39022" width="150"></iframe>
+				<button type="button" onclick="openModal('mymodalcentered')" class="px-4 py-2 mt-2 bg-blue-400 hover:bg-blue-500 text-white rounded">Office Application</button>
+			</div>
+		</div>
+	</div>
+
+	<dialog id="mymodalcentered" class="bg-transparent z-0 relative w-screen h-screen">
+		<div
+			class="p-7 flex justify-center items-center fixed left-0 top-0 w-full h-full bg-gray-900 bg-opacity-50 z-50 transition-opacity duration-300 opacity-0">
+			<div class="bg-white flex rounded-lg w-1/2 relative">
+				<div class="flex flex-col items-start">
+					<div class="p-7 flex items-center w-full">
+						<div class="text-gray-900 font-bold text-lg">Modal Centered</div>
+						<svg onclick="modalClose('mymodalcentered')"
+							class="ml-auto fill-current text-gray-700 w-5 h-5 cursor-pointer" xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 18 18">
+							<path
+								d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z" />
+						</svg>
+					</div>
+
+					<div class="px-7 overflow-x-hidden overflow-y-auto" style="max-height: 40vh;">
+						<p>First Line</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+							dolore magna aliqua.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+							dolore magna aliqua.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+							dolore magna aliqua.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+							dolore magna aliqua.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+							dolore magna aliqua.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+							dolore magna aliqua.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+							dolore magna aliqua.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+							dolore magna aliqua.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+							dolore magna aliqua.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+							dolore magna aliqua.</p>
+						<p>Last Line</p>
+					</div>
+
+					<div class="p-7 flex justify-end items-center w-full">
+						<button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-3">
+							Ok
+						</button>
+						<button type="button" onclick="modalClose('mymodalcentered')"
+							class="bg-transparent hover:bg-gray-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</dialog>
+
+</html>
