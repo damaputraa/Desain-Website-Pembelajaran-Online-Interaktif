@@ -49,3 +49,7 @@ a{
 	width: 75%;
 	height: 80%;
 }        
+
+.slide:hover {
+  flex: 5;
+}

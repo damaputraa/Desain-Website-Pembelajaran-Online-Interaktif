@@ -9,15 +9,53 @@
 </head>
 <body>
 	<!-- component -->
-<div class="text-xl font-bold m-5 text-center">Use Keyboard Arrow Keys To Go Left And Right</div>
+<div class=" text-xl font-bold m-5 text-center">Use Keyboard Arrow Keys To Go Left And Right</div>
+<!-- Class Tiger -->
+<div class="gallery border-2 rounded mx-auto m-5 bg-white flex rounded-lg w-1/2 relative">
+	<div class="flex flex-col items-start">
+		<div class="p-7 flex items-center w-full">
+			<div class="text-gray-900 font-bold text-lg">Tiger</div>
+			<div class=" ml-auto flex">
+			<svg action="prev" class="w-7 border-2 rounded-l-lg p-1 cursor-pointer border-r-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path action="prev" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+			<svg action="next" class="w-7 border-2 rounded-r-lg p-1 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path action="next" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+		</div>
+		</div>
+
+		<div class="px-7 overflow-x-hidden overflow-y-auto" style="max-height: 40vh;">
+			<div class="h-100">
+				<img class="w-full h-56 p-8" src="../image/dama.png" alt="">
+		</div>
+		<div class="sub w-full my-auto ">
+				<!-- this buttons are usable everywhere inside gallery element -->
+				<div class="goto border border-gray-400 text-sm font-semibold inline-block mt-2 p-1 px-2 rounded cursor-pointer" action="goto" goto="2">Goto Third Frame</div><!-- add (action="goto" goto="[val]{0 means first frame and so on}") attribute to jump into frames -->
+				<div class="goto border border-gray-400 text-sm font-semibold inline-block mt-2 p-1 px-2 rounded cursor-pointer" action="goto" goto="end">Goto Last Frame</div> 
+		</div>
+		</div>
+
+		<div class="p-7 flex justify-end items-center w-full">
+			<button type="button" onclick="modalClose('backend')"
+				class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-3">
+				Okey
+			</button>
+			<button type="button" onclick="modalClose('backend')"
+				class="bg-transparent hover:bg-gray-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+				Keluar
+			</button>
+		</div>
+	</div>
+</div>
+
 
 <div class="gallery border-2 rounded mx-auto m-5 bg-white" style="width:300px;">
 		<div class="top flex p-2 border-b select-none">
 			<div class="heading text-gray-800 w-full pl-3 font-semibold my-auto"></div>
+
+			<!-- header-tombol -->
 			<div class="buttons ml-auto flex text-gray-600 mr-1">
 				<svg action="prev" class="w-7 border-2 rounded-l-lg p-1 cursor-pointer border-r-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path action="prev" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
 				<svg action="next" class="w-7 border-2 rounded-r-lg p-1 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path action="next" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
 			</div>
+
 		</div>
 		<div class="content-area w-full h-96 overflow-hidden">
 			<div class="platform shadow-xl h-full flex">
