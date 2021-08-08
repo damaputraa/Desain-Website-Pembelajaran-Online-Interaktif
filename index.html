@@ -28,40 +28,10 @@
 			</li>
 			<li class="head" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"><a href="#about">About</a>
 			</li>
+			<li class="head" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"><a class="bg-green-500 text-white" href="src/admin/public/index.html" target="_blank">Free Trial</a>
+			</li>
 		</ul>
 	</header>
-	<!-- <section class=" justify-center bg-white text-gray-900 font-sans my-10" id="home">
-		<div class="header-font ">
-			<div class="pendahuluan grid grid-cols-1 md:grid-cols-2 bg-gray-100 my-20 pb-15 rounded-2xl max-w-7xl h-auto my-7 px-10">
-				<div class="kiri w-full pb-20 ">
-					<div class="w-full float-left">
-					<iframe class="dunia " src="https://embed.lottiefiles.com/animation/62228" width="600"
-						height="400"></iframe>
-					</div>
-					<div class="w-full float-right">
-					<p class="kata-awal text-gray-900  text-3xl py-4 font-bold md:text-center">
-						Apa itu Covid-19 ?
-					</p>
-					<p class=" text-gray-500 text-lg leading-loose px-3 md:text-left"> <span
-							class="text-red-500 ">Coronavirus</span> adalah
-						kumpulan virus yang bisa menginfeksi sistem pernapasan. Pada banyak kasus, virus ini hanya menyebabkan
-						infeksi pernapasan ringan, seperti flu. Namun, virus ini juga bisa menyebabkan infeksi pernapasan berat,
-						seperti infeksi paru-paru (pneumonia).
-
-						Virus ini menular melalui percikan dahak (droplet) dari saluran pernapasan, misalnya ketika berada di ruang
-						tertutup yang ramai dengan sirkulasi udara yang kurang baik atau kontak langsung dengan droplet.</p>
-
-					<p class="my-3">
-						<a class="bg-indigo-400 hover:bg-indigo-600 text-white  rounded-full px-3 py-3"
-							onmouseover="Play2Sound('mySound2')" onmouseout="StopSound('mySound2')" href="">Pelajari Lebih
-							Lanjut!</a>
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		</div>
-	</section> -->
 
 	<!-- Class Nav Home -->
 	<div class="p-10">
@@ -84,7 +54,7 @@
 
 				<p class="my-3">
 					<a class="bg-indigo-400 hover:bg-indigo-600 text-white  rounded-full px-3 py-3 ml-3"
-						onmouseover="Play2Sound('mySound2')" onmouseout="StopSound('mySound2')" href="">Pelajari Lebih
+						onmouseover="Play2Sound('mySound2')" onmouseout="StopSound('mySound2')" href="src/admin/public/index.html" target="_blank">Pelajari Lebih
 						Lanjut!</a>
 				</p>
 			</div>
@@ -538,9 +508,9 @@
 								</span>
 							</li>
 							<li class="flex justify-center items-center my-10">
-								<button
+								<a href="src/admin/public/index.html" target="_blank"
 									class="border-2 border-indigo-400 text-indigo-600 hover:bg-indigo-500 hover:text-white transition duration-300 px-8 py-3 rounded-xl">Daftar
-									Sekarang</button>
+									Sekarang</a>
 							</li>
 						</ul>
 					</div>
@@ -564,9 +534,9 @@
 									class="input border-2 border-blue-400 appearance-none rounded px-10 py-2 focus focus:border-indigo-600 focus:outline-none active:outline-none active:border-indigo-600 mx-5 w-full"
 									id="email" type="text" autofocus>
 
-								<button
+								<a href="src/admin/public/index.html" target="_blank"
 									class="border-2 border-green-400 text-green-600 hover:bg-green-500 hover:text-white transition duration-300 px-8 py-3 rounded-xl mx-2 mt-2">Coba
-									Sekarang</button>
+									Sekarang</a>
 							</div>
 						</div>
 					</div>
@@ -701,6 +671,27 @@
 					</div>
 					<!-- Ke 4 VSC -->
 					<div
+						class="flex-shrink-0 m-6 relative overflow-hidden bg-indigo-400 hover:bg-indigo-500 rounded-lg max-w-xs shadow-lg">
+						<svg class="absolute bottom-0 left-0 mb-8" viewBox="0 0 375 283" fill="none"
+							style="transform: scale(1.5); opacity: 0.1;">
+							<rect x="159.52" y="175" width="152" height="152" rx="8" transform="rotate(-45 159.52 175)"
+								fill="white" />
+							<rect y="107.48" width="152" height="152" rx="8" transform="rotate(-45 0 107.48)" fill="white" />
+						</svg>
+						<div class="relative pt-10 px-10 flex items-center justify-center">
+							<div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"
+								style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;">
+							</div>
+							<img class="relative w-40" src="src/image/githubb.png" alt="">
+						</div>
+						<div class="relative text-white px-6 pb-6 mt-6">
+							<div class="flex justify-center align-center text-center">
+								<span class="block font-semibold text-xl font-bold tracking-wider">Github</span>
+							</div>
+						</div>
+					</div>
+					<!-- Ke 4 VSC -->
+					<div
 						class="flex-shrink-0 m-6 relative overflow-hidden bg-yellow-400 hover:bg-yellow-500 rounded-lg max-w-xs shadow-lg">
 						<svg class="absolute bottom-0 left-0 mb-8" viewBox="0 0 375 283" fill="none"
 							style="transform: scale(1.5); opacity: 0.1;">
@@ -742,7 +733,11 @@
 						</div>
 					</div>
 				</div>
-			
+							<!-- Support By -->
+							<p class="kata-awal tracking-wider uppercase text-3xl font-bold text-center  text-white  mt-5">
+								<span
+									class="bg-gradient-to-r from-yellow-500 to-yellow-400 px-7 py-5 mt-20 rounded-full filter drop-shadow-lg ">References</span>
+							</p>
 		</div>
 	</section>
 
