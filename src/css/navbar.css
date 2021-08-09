@@ -18,6 +18,10 @@ a {
   top: 0;
 }
 
+.header .logo {
+  font-family: 'Inter', sans-serif;
+}
+
 .header ul {
   margin: 0;
   padding: 0;
@@ -31,7 +35,7 @@ a {
 } */
 
 .header li a {
-  font-family: 'Hind Siliguri', sans-serif;
+  font-family: 'Inter', sans-serif;
   padding: 10px;
   font-weight: 500;
   display: block;
